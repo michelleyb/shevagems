@@ -1,0 +1,254 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+body {
+	background-color: #e6e4e3;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	color: #83817e;
+	padding: 5px 0 10px 0;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  font-size: 2em;
+  padding: 4px;
+  color: #E35D96;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+	list-style: none;
+}
+
+.fullscreen{
+	padding: 0;
+}
+
+.logo {
+	padding: 10px;
+	max-width: 450px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.nav {
+	background-color: #dcd9d8;
+	border-top: 2px solid transparent;
+	width: 100%;
+}
+
+.nav ul {
+	width: 395px;
+	margin: 0 auto;
+}
+
+.nav li {
+	padding: 7px 12px 5px 12px;
+}
+
+.nav a {
+	color: #83817e;
+}
+
+.fancy {
+	font-family: 'Cinzel Decorative', serif;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+#topImage {
+	margin-bottom: 10px;
+}
+
+.pic {
+	display: inline-block;
+	width: calc((100% - 12px) / 4);
+	padding: 5px;
+}
+
+.picModal {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+
+.close {
+	background-color: transparent;
+	position: absolute;
+	top: 7px;
+	right: 10px;
+	font-size: 2em;
+	color: #E35D96;
+	border: none;
+	z-index: 1;
+	opacity: .5;
+}
+
+.modal-header {
+	background-color: #e6e4e3;
+	padding: 7px 5px 5px 5px;
+}
+
+.modal-body {
+	background-color: #e6e4e3;
+}
+
+.modal-title {
+	font-size: 1.8em;
+	z-index: 0;
+}
+
+h3 {
+	font-family: 'Cinzel Decorative', serif;
+	font-weight: 400;
+	color: #E35D96;
+	text-align: center;
+	background: none repeat scroll 0% 0% #e6e4e3;
+	position: relative;
+	z-index: 1;
+}
+
+#shop h3 {
+	width: 95px;
+	margin: 0 auto;
+}
+
+#coven h3 {
+	width: 120px;
+	margin: 0 auto;
+}
+
+#lila h3 {
+	width: 150px;
+	margin: 0 auto;
+}
+
+#footer h3 {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.topLine {
+	border-width: 1px 0 1px 0;
+  	-moz-border-image: -moz-linear-gradient(left, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #fd8fbb 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #fd8fbb 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	border-image: linear-gradient(to right, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #fd8fbb 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	border-image-slice: 1;
+}
+
+.line {
+	border-width: 5px solid transparent;
+	background-position: 0 0, 0 100% ;
+  	background-repeat: no-repeat;
+  	-moz-border-image: -moz-linear-gradient(left, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #E35D96 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #E35D96 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	border-image: linear-gradient(to right, #9fcef3 0%, #9de1d6 5%, #eef56f 25%, #fdaf76 40%, #E35D96 50%, #fdaf76 60%, #eef56f 75%, #9de1d6 95%, #9fcef3 100%);
+	border-image-slice: 1;
+}
+
+hr {
+	position: relative;
+	top: 2.3em;
+	z-index: 0;
+}
+
+.social {
+	width: 110px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+
+
+/***************************
+****************************
+Responsive
+****************************
+***************************/
+
+.bss-slides{
+  position: relative; 
+  display: block;    
+}
+.bss-slides figure{
+/* these are the individual slides*/
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.bss-slides figure:first-child{
+/* the very first slide is relatively 
+   positioned in order to give height 
+   to the container element */
+  position: relative;
+}
+.bss-slides figure img{
+/* all slide images are made "invisible"
+   with an opacity of 0, then we
+   set the transition property so
+   that later when we change it,
+   it transitions over 1.2 seconds for a
+   fade in/out effect instead of changing 
+   instantly */   
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+.bss-slides .bss-show img{
+  opacity: 1;
+}
+.bss-next, .bss-prev{
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  opacity: 0;
+  user-select: none;
+  font-size: 2em;
+}
+.bss-next:hover, .bss-prev:hover{
+/* give the buttons a pointer/hand cursor
+   and highlight them with full opacity
+   when hovering */  
+  cursor: pointer;
+  opacity: .5;
+}
+.bss-next{
+/* position 'next' button at right */  
+  right: 0;
+}
+.bss-prev{
+/* position 'previous' button at left */
+  left: 0;
+}
+
+
+
+/***************************
+****************************
+Responsive
+****************************
+***************************/
+
+@media screen and (max-width: 800px) {
+	.pic {
+		width: calc((100% - 12px) / 3);
+	}
+}
+
+@media screen and (max-width: 470px) {
+	.pic {
+		width: calc((100% - 12px) / 2);
+	}
+	.nav {
+		display: none;
+	}
+}
+
